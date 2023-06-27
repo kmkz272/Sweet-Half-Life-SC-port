@@ -1,7 +1,6 @@
 //projectile used for weapon plasma.
 //PlasmaProjectile is for primary attack
 //PlasmaProjectile2 is for secondary attack
-//PlasmaProjectileSmall is for the small sprites that spawn from both attack modes. THIS IS NOT IMPLEMENTED YET.
 
 class PlasmaProjectile : ScriptBaseEntity
 {
@@ -16,6 +15,8 @@ class PlasmaProjectile : ScriptBaseEntity
 		self.pev.solid = SOLID_BBOX;
 		g_EntityFuncs.SetModel( self, "models/not_precached2.mdl" );
 		self.pev.body = 1;
+		self.pev.rendermode = 4;
+		self.pev.renderamt = 0;
 		m_yawCenter = pev.angles.y;
 		m_pitchCenter = pev.angles.x;
 		g_EntityFuncs.SetSize( self.pev, g_vecZero, g_vecZero );
@@ -104,6 +105,8 @@ class PlasmaProjectile2 : ScriptBaseEntity
 		self.pev.solid = SOLID_BBOX;
 		g_EntityFuncs.SetModel( self, "models/not_precached2.mdl" );
 		self.pev.body = 1;
+		self.pev.rendermode = 4;
+		self.pev.renderamt = 0;
 		m_yawCenter = pev.angles.y;
 		m_pitchCenter = pev.angles.x;
 		g_EntityFuncs.SetSize( self.pev, g_vecZero, g_vecZero );
@@ -280,50 +283,6 @@ class PlasmaProjectileSmall : ScriptBaseEntity
 	}	
 }
 
-PlasmaProjectileSmall ShootPlasmaProjectileSmall( entvars_t@ pevOwner, Vector vecStart, Vector vecVelocity )
-{
-	int r = 250;
-	int g = 0;
-	int b = 0;
-	int br = 250;
-	
-	CBaseEntity@ cbePlasmaSmall = g_EntityFuncs.CreateEntity( "plasma_proj2", null,  false);
-	PlasmaProjectileSmall@ pPlasmaSmall = cast<PlasmaProjectileSmall@>(CastToScriptClass(cbePlasmaSmall));
-	g_EntityFuncs.SetOrigin( pPlasmaSmall.self, vecStart );
-	g_EntityFuncs.DispatchSpawn( pPlasmaSmall.self.edict() );
-	pPlasmaSmall.pev.solid = SOLID_BBOX;
-	g_EntityFuncs.SetSize( pPlasmaSmall.pev, g_vecZero, g_vecZero );
-	@pPlasmaSmall.pev.owner = pevOwner.pContainingEntity;
-	pPlasmaSmall.pev.velocity = vecVelocity;
-	pPlasmaSmall.pev.angles = Math.VecToAngles( pPlasmaSmall.pev.velocity );
-	const Vector vecAngles = Math.VecToAngles( pPlasmaSmall.pev.velocity );
-    pPlasmaSmall.pev.angles.x = vecAngles.z;
-    pPlasmaSmall.pev.angles.y = vecAngles.y + 90;
-    pPlasmaSmall.pev.angles.z = vecAngles.x;
-	pPlasmaSmall.SetThink( ThinkFunction( pPlasmaSmall.Think ) );
-	pPlasmaSmall.pev.nextthink = g_Engine.time + 0.1f;
-	pPlasmaSmall.SetTouch( TouchFunction( pPlasmaSmall.Touch ) );
-	pPlasmaSmall.pev.gravity = 0.3f;
-	pPlasmaSmall.pev.dmg = plasma_DAMAGE2;
-	return pPlasmaSmall;
-}
-
-void ProjectileDynamicLight( Vector vecPos, int radius, int r, int g, int b, int8 life, int decay )
-{
-	NetworkMessage ndl( MSG_PVS, NetworkMessages::SVC_TEMPENTITY );
-		ndl.WriteByte( TE_DLIGHT );
-		ndl.WriteCoord( vecPos.x );
-		ndl.WriteCoord( vecPos.y );
-		ndl.WriteCoord( vecPos.z );
-		ndl.WriteByte( radius );
-		ndl.WriteByte( int(r) );
-		ndl.WriteByte( int(g) );
-		ndl.WriteByte( int(b) );
-		ndl.WriteByte( life );
-		ndl.WriteByte( decay );
-	ndl.End();
-}
-
 void RegisterPlasmaProjectile()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "PlasmaProjectile", "plasma_proj" );
@@ -332,9 +291,4 @@ void RegisterPlasmaProjectile()
 void RegisterPlasmaProjectile2()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "PlasmaProjectile2", "plasma_proj2" );
-}
-
-void RegisterPlasmaProjectileSmall()
-{
-	g_CustomEntityFuncs.RegisterCustomEntity( "PlasmaProjectile3", "plasma_proj3" );
 }
