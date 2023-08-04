@@ -1,0 +1,183 @@
+
+– v1.0
+21/4/2018
+initial release
+
+– v1.1
+23/4/2018
+t0a0: more speed and damage to the first elevator and added a workaround to solve "issues" with the second elevator.
+shlwork: what to do in the garage area now is easy to understand.
+shl6: the first vortigaunt now cant be killed. Fixed the weird osprey.
+shl6b for listen server: renamed to shl6b.bsp (had another name due to a clumsy mistake of mine).
+shl9b: fixed a bug that appears when you get out from the torture room.
+shl12: fixed telefrag issues. Fixed missing files in shl12.res.
+shl14b: fixed telefrag issues.
+
+– v1.2
+28/4/2018
+added custom models for npc (except for the probe)
+added invisible walls in back area of the map's starting point to avoid players seeing things they are not supposed to.
+shl2: added teleport nearby the first door to avoid people being stuck when it breaks.
+shl9: added teleport in the tentacle area to the upper area.
+shl9b: fixed door in torture room not being locked when the soldiers event starts.
+shl10: added more delay to first door. fixed bigmomma not entering the player area.
+shl14b: kingpin now is inmune to the forces that pushes the player out the map.
+shl15: after the cinematic now you appear in the aliens area.
+
+– v1.3
+6/5/2018
+restored (partially) the healing crystals.
+restored missing text.
+hev scientist now have weapons more accurate to what they should have.
+fixed timing glitches on most cinematics.
+t0a0: replaced the system of the second elevator for a better one.
+shl2: fixed bug that allowed the player to rush the map after taking the first elevator.
+shl6: fixed the hev scientist and the gargantua sequences.
+shl10: hev scientist now do not interfere with the explosion sequence.
+
+– v1.4
+22/5/2018
+restored missing dialogs (scripted sentences).
+robogrunts now are stronger and have better weapons.
+the listenserver patch was removed, is not anymore needed.
+added routes.txt.
+t0a0: fixed text.
+shl2,shl3,shl4: added more ammo.
+shl6: added grenades as starting weapon. Fixed bug that allowed the possibility to skip the first part of the map.
+shl10: fixed bigmomma not entering the player area again, i made multiple testing and this time seems to be really fixed. And the valve cannot be used until the bigmomma is defeated.
+shl_ship4: the boss can attack now.
+
+– v1.5
+12/6/2018
+sound files fix:
+added dbarrel1.wav
+fixes mistakes in sound files paths
+fixed maps .res
+fixed hevsci_monster.txt
+
+– v1.6
+17/6/2018
+shl2: fixed the wildly opening/closing lift door (i felt really bad for this), now when the scientist start the "opening the hev suit room door" sequence the big door will be locked to avoid people opening it and leading the gargantua to kill the scientist.
+shl5: fixed scientist following player and straying from the path to open the door.
+shl6: reduced health to hwgrunt.
+shl10: tweaked soldiers cinematic.
+shl11: fixed energy cannon missing the gargantua when the soldiers are still alive.
+shl12: fixed the second elevating plataform hurting players with the ceiling. Fixed its reactivating time.
+shl13: fixed restarting time of the elevating plataform.
+
+– v1.7
+11/7/2018
+shl4: fixed the hev scientist doing stupid moves and getting himself killed by the zombies.
+shl6: small tweak.
+shl7: fixed elevator.
+shl8: added more respawning points.
+shl9: added more respawning points to avoid deaths by eletrocution.
+shl10: fixed bigmomma again (hopefully… D:)
+shl_ship2: improved the elevator system.
+
+– v1.8
+17/7/2018
+shl1,shl10: cleaned some code mistakes.
+added materials.txt.
+fixed missing earth planet on space maps.
+shl_ship3: fixed some bugs on garg cinematic.
+shl_ship4: fixed missing laser sound.
+
+– v1.9
+29/7/2018
+cleaned typos on shl_sentences.txt.
+added correctly shl_materials.txt (only used on shl_2001)
+shl6: fixed osprey animation.
+shl_ship3: fixed gargantua not dying.
+shl_ship4: fixed something that caused to not load correctly shl.wad.
+shl16: fixed some timing issues with the cinematic.
+
+– v1.10
+15/10/2018
+added a fixed shl.wad.
+shl6: fixed picture texture error in the corridors.
+shl9: added missing hwgrunts. replaced the model of the first hev scientist for a more acurate one.
+shl16: fixed models issues with the cinematic (for alien route).
+
+– v1.11
+15/10/2018
+renamed t0a0 to shl_t0a0 to avoid map name conflict with hl hazard course.
+
+– v1.12
+12/2/2019
+added some custom weapons (the plasma gun and the shl minigun in some maps).
+fixed some huge wood gibs bug.
+replaced the glitched hev scientist model for a fixed one.
+shl_work: replaced a hev scientist model for a more acurate one.
+shl_ship2: fixed a door not opening unless you kill some aliens.
+
+– v1.13
+17/2/2019
+added some missing files for custom weapons.
+replaced the gordon model for the correct one.
+shl4: small tweak on the barney vs zombie sequence.
+shl6b: fixed missing monsters after picking security card.
+
+– v1.14
+10/3/2019
+Healing crystals now look and move like the original mod.
+shl14b: replaced healing crystals with medkits.
+
+– v1.15
+13/10/2019
+fixed a few animations.
+shl9: fixed the hevsci not breaking the fence.
+
+– v2.0
+6/1/2020
+Custom weapons:
+- the plasma gun now is more accurate to the original.
+- added the shl minigun.
+- added the shl m16.
+- added custom ammo.
+Maps now use classic mode.
+shl2: fixed a bug can cause players to get stuck in the map if they stop advancing at the end of the map.
+shl15: fixed problems derived from broken multisource entities caused by the SC 5.21 update.
+
+– v2.1
+11/1/2020
+fixed problems with the music.
+shl2: For some reason the turned to be too hard. Now is way easier.
+shl_2001: fixed missing npc.
+9/2/2020
+fixed the .res file, somehow i managed to mess it up before :/
+
+– v2.2
+25/5/2020
+merged models using modelguy.
+shl15: fixed hevsuit npc.
+
+– v3.0
+16/9/2022
+maps merged: reduced maps from 27 to 13 .bsp files.
+forced classic mode removed.
+replaced broken env_global system with data_global, custom entity.
+plasma gun: fixed error sprite showing up when shooting.
+shl_3(shl7):added missing "scientist sequence"
+shl_3(shl8):fixed potential bug that can cause to break the game after the apache is destroyed.
+shl_3(shl9):in the tentacle area, you can always use the buttons to move the plataforms. No more teleport.
+shl_4(shl12): fixed bug that can cause a crash under some circunstances after the ufo is defeated.
+shl_4b(shl_ship,shl_ship2,shl_ship3) now you have to destroy the 3 sets of energy tubes to advance to the next level like the original mod.
+shl6(shl15): added missing "freeman sequence".
+
+– v3.1
+8/10/2022
+shl_1a,shl_1b,shl_1c: ammo rebalanced.
+shl_4b: fixed map being solflocked when the soldier dies before setting the explosives.
+shl_4,shl5b: weapons and ammo will be retained after map change.
+
+- v3.2
+2/3/2023
+shl_1a,shl_1b,shl_1c merged into shl_1: now you need to activate the fuel to advance.
+shl_1: fixed garg falling into the water. Fixed scientist exploding for no reason.
+shl_4b: fixed elevator door malfunction if button are pressed with a certain timing.
+
+– v3.3
+8/5/2023
+shl_0: fixed changelevel (shit happens…)
+shl_1: fixed broken teleport that locked players behind a door.
