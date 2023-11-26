@@ -181,3 +181,48 @@ shl_4b: fixed elevator door malfunction if button are pressed with a certain tim
 8/5/2023
 shl_0: fixed changelevel (shit happens…)
 shl_1: fixed broken teleport that locked players behind a door.
+
+- v3.4
+18/11/2023
+v3.4
+fixed error model on plasma gun shot.
+adjusted vulcan spin sounds timing.
+adjusted looped sounds.
+vulcan and p904 now have have a max ammo of 250, as in the original mod.
+fixed npc scientist following sound.
+adjusted aliens classification so they also attack xen aliens. 
+replaced custom sound files with .ogg format.
+replaced fire sprites with the hl ones.
+replaced trigger_changesky with custom_script.
+added basic save/load system. (disabled by default)
+added changelevel sprites. (disabled by default)
+adjusted gravity settings.
+pc_balancing enabled.
+shl_training: adjusted elevator for better sync with its doors.
+shl_training: fixed npc sentences not playing.
+shl_1: fixed scientist sequence broken when player or npc die in running from garg sequence or stuck with big doors.
+shl_1: fixed lift big doors closing and locking the path.
+shl_1: fixed dead alien slave getting up.
+shl_1: fixed zombies breaking scientist sequence opening the door, creating a softlock. Fixed spawning at a wrong area.
+shl_2: fixed osprey bleeding and dissapearing under some circunstances.
+shl_2: strange colored box removed.
+shl_3: fixed trigger_camera not following the train.
+shl_3: fixed train scientist being still alive even if you killed him in the prior area.
+shl_3: added gauss rifle and its shot on the barricade break event. 
+shl_3: fixed apache wrong movements.
+shl_3: added extra button in the tentacle area to avoid players being unable to reach the upper area without respawning.
+shl_4: adjusted events on torture room.
+shl_4: added the right model and weapon to the hev scientist attacking the garg with a rpg.
+shl_4b: changed captured grunts initial animation due to wrong weird effect.
+shl_5: fixed nihilant showing up wrongly.
+shl_5: fixed ufo sound keep playing after being captured under some circustances.
+shl_5: fixed rare bug that could cause the door to not be broken by alien grunts, blocking the path.
+shl_5: fixed scienting bugged animation. Fixed teleport causing people getting stuck.
+shl_5: adjusted trigger_camera timing on garg sequence.
+shl_5b: fixed weapons not being removed (and on next map).
+shl_6: kingpin is way stronger now in your first encounter.
+shl_6: fixed initial enviroment sound not playing.
+shl_6: fixed bug that caused the eye to be "invulnerable" sometimes.
+shl_6: fixed players being able to skip nihilanth and alien grunt/slave sequences.
+shl_6: fixed nihilanth animation breaking sometimes.
+shl_7: adjusted text.
