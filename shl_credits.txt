@@ -1,4 +1,4 @@
-Sweet Half-Life conversion to sven coop by kmkz. v3.4
+Sweet Half-Life conversion to sven coop by kmkz. v3.5
 
 1. Why/description
 2. Important Notes 
@@ -29,7 +29,6 @@ Check routes.txt for information about the paths you can take.
 3. Changes made from the original mod
 Custom monster are not included yet. I may add them in the future. Instead they were
 replaced with sc monsters.
-The plasmagun was ported but it is incomplete.
 
 -------------------------------------------------------------------------------------
 
@@ -41,10 +40,7 @@ The plasmagun was ported but it is incomplete.
 5. Quality Standars
 
 I try to have the maps series without bugs and i have been maintaining and improving 
-them in the last 6 years but is no easy task, unlike other people i do not have
-a public server or a team to make a test so i have to do that alone. this mean that 
-i may miss problems that can only be seen when 2 or more players play the maps, now i
-added bots in my tests and i hope to improve the results. Worth saying that most of the
+them in the last 6 years but is no easy task. Worth saying that most of the
 ports i played (before 2019) had serious bugs and no one cares about it.
 
 -------------------------------------------------------------------------------------
@@ -64,6 +60,7 @@ about real issues and i am starting to believe they are just trolling.
 7. Download site
 
 https://github.com/kmkz272/
+gamebanana.com
 
 I am using github to store my Sven Co-op ports and scripts since is far better than 
 scmapdb, and so i am not using it anymore. This site has has been going downhill 
@@ -89,8 +86,9 @@ Avoid making custom versions of this pack. While i have been open to this some t
 some people have been disrespecfully doing random changes on maps from the cummunity on 
 scmapdb, making false bug reports and that kind of crap. So, until the enviroment get 
 more healthy do not upload custom versions.
-My DL site is https://github.com/kmkz272/ .If you find custom versions elsewhere these
-are not mine and may have changes forced against my will.  
+My DL sites are https://github.com/kmkz272/ and gamebanana.com .
+If you find custom versions elsewhere these are not mine and may have changes forced 
+against my will.  
 
 ------------------------------------------------------------------------------------
 

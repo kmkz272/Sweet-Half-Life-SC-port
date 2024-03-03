@@ -226,3 +226,15 @@ shl_6: fixed bug that caused the eye to be "invulnerable" sometimes.
 shl_6: fixed players being able to skip nihilanth and alien grunt/slave sequences.
 shl_6: fixed nihilanth animation breaking sometimes.
 shl_7: adjusted text.
+
+- v3.5
+3/3/2024
+fixed human grunts and hev scientist displaying a wrong weapon
+adjusted some sounds reach.
+replaced trigger_cdaudio and target_cdaudio with ambient_music. 
+shl3: fixed crystal container not open when blocked.
+shl4: fixed respawns errors.
+shl5: fixed bug that caused map events to start early in the xen area.
+shl5: now all players see the nihilanth
+shl7: weapons are removed.
+
